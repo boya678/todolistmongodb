@@ -15,7 +15,7 @@ public class ClaveStepDefinition {
 	
 	@Given("^(.*) uso el usuario (.*)$")
 	public void anaUsoElUsuarioAbcd(String nombre, String usuario) {
-		theActorCalled(nombre).can(BrowseTheWeb.with(Chrome().enLaUrl("https://svpbanistmo.qa.todo1.com")));
+		theActorCalled(nombre).can(BrowseTheWeb.with(Chrome().enLaUrl("https://www.banistmo.com/wps/portal/banistmo/personas/productos-y-servicios/canales/sucursal-virtual-personas/")));
 		theActorInTheSpotlight().wasAbleTo(Ingresar.elUsuario(usuario));
 	}
 
