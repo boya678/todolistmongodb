@@ -17,6 +17,7 @@ public class OwnWebDriver {
 	}
 	
 	public WebDriver enLaUrl(String url) {
+		System.setProperty("webdriver.chrome.driver","chromedriver");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
