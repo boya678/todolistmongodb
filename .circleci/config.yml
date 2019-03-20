@@ -39,4 +39,4 @@ jobs:
 
       # run tests!
       - run: ls
-      - run: mvn test -Dtest=UsuarioRunner
+      - run: mvn verify
