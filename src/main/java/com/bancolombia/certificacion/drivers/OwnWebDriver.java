@@ -20,7 +20,7 @@ public class OwnWebDriver {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
-		driver.findElement(By.xpath("//*[text()='presione aquí']")).click();
+		driver.findElement(By.xpath("//*[text()='Ingresa aquí']")).click();
 		Set<String> pantallas=driver.getWindowHandles();
 		pantallas.remove(driver.getWindowHandle());
 		driver.switchTo().window(pantallas.iterator().next());
