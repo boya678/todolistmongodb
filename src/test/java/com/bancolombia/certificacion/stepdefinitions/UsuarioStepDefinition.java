@@ -45,7 +45,7 @@ public class UsuarioStepDefinition {
 	
 	@Given("^(.*) abre la SVP$")
 	public void AbreLaSVP(String nombre) {
-		theActorCalled(nombre).can(BrowseTheWeb.with(Chrome().enLaUrl("https://svpbanistmo.qa.todo1.com")));
+		theActorCalled(nombre).can(BrowseTheWeb.with(Chrome().enLaUrl("https://www.banistmo.com/wps/portal/banistmo/personas/productos-y-servicios/canales/sucursal-virtual-personas/")));
 	}
 
 	@When("^intenta autenticarse con el usuario (.*)$")
