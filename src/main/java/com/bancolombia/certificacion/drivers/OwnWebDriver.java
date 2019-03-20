@@ -35,7 +35,8 @@ public class OwnWebDriver {
 		Set<String> pantallas=driver.getWindowHandles();
 		pantallas.remove(driver.getWindowHandle());
 		driver.switchTo().window(pantallas.iterator().next());
-		
+		pantallas.remove(driver.getWindowHandle());
+		driver.switchTo().window(pantallas.iterator().next());
 		}
 		catch(Exception e){}
 		return driver;
