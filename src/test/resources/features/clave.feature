@@ -21,3 +21,4 @@ Scenario: clave vacia
 Given ana uso el usuario abcd1234
 When intenta autenticarse con la clave ""
 Then no puede continuar
+
